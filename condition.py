@@ -66,3 +66,67 @@ else:
     caption = 'you are not Human'
 print(caption)
 
+
+# complex conditions
+
+# A student makes honour roll if their average is >= 85
+# and their lowest grade is not below 70
+
+gpa = float(input('What is your Grade Point Average?').strip())
+lowest_grade = float(input('What was your lowest grade?').strip())
+country_a = input('What country?').strip().lower()
+income = int(input('How much is your income?'))
+volunteer_hours = int(input('How many hours?').strip())
+
+if gpa >= 3.5 and lowest_grade >= 70:
+   hounour_roll = True
+else:
+   hounour_roll = False
+
+if country_a == 'canada':
+   is_canadian = True
+else:
+   is_canadian = False
+
+if income < 30000:
+   low_income = True
+else:
+   low_income = False
+
+if volunteer_hours == 100:
+   community_leader = True
+else:
+   community_leader = False
+
+
+if hounour_roll:
+   print('Yes')
+else:
+   print('No')
+
+if is_canadian:
+   print('Yes')
+else: 
+   print('No')
+
+if low_income:
+   print('Yes')
+else:
+   print('No')
+
+if community_leader:
+   print('Yes')
+else:
+   print('No')
+
+if hounour_roll and low_income:
+   print('Result: full scholarship')
+elif hounour_roll and community_leader:
+   print('Result: Partial Scholarship 50%')
+elif hounour_roll and is_canadian:
+   print('Canadian Merit - 25%')
+else:
+   print('No Scholarship try again Next year')
+
+if not hounour_roll and low_income:
+   print('Advice: Apply for low income support programme')
