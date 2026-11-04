@@ -13,34 +13,34 @@ for nam in range(3):
 
 
 
-# people.append('Bill')
-# print(people)
+people.append('Bill')
+print(people)
 
 
-# #While loop
-# index = 0
+#While loop
+index = 0
 
-# while index < 7:
-#     print(people[index % len(people)])
-#     index = index + 1
-
-
-# password = ''
-
-# while password != 'eka123':
-#     print('wrong password')
-#     password = input('Enter password:').lower().strip()
-#     print('checking...\n')
-
-# print('you are logged in')
+while index < 7:
+    print(people[index % len(people)])
+    index = index + 1
 
 
-# while True:
-#     passi = input('Password:').lower().strip()
+password = ''
 
-#     if passi == 'eka124':
-#         print('Successfully logged in')
-#         break
-#     else:
-#         print('Wrong password')   
+while password != 'eka123':
+    print('wrong password')
+    password = input('Enter password:').lower().strip()
+    print('checking...\n')
+
+print('you are logged in')
+
+
+while True:
+    passi = input('Password:').lower().strip()
+
+    if passi == 'eka124':
+        print('Successfully logged in')
+        break
+    else:
+        print('Wrong password')   
 
