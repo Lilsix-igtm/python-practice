@@ -67,7 +67,7 @@ second_number = int(input('What is your test score?'))
 total = add_number(first_number,second_number)
 print(f'Your total score is {total}')
 
-learning more of Parameter in functions
+# learning more of Parameter in functions
 def the_initial(named, force_uppercase):
     if force_uppercase:
         initial = named[0:1].upper()
