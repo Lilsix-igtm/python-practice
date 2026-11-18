@@ -48,21 +48,13 @@ files.close()
 
 
 # with
-
 # Tells Python to manage the file's opening and closing automatically.
-
 # open('creat.txt', 'r')
-
 # Opens creat.txt in read mode.
-
 # as file
-
 # Stores the opened file object in a variable called file.
-
 # The indented lines
-
 # These are the instructions Python performs while the file is open.
-
 with open('write.txt', 'r') as bike:
     content = bike.read()
     print(content)

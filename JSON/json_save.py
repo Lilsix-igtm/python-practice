@@ -22,5 +22,5 @@ with open('json_order.json', 'w') as file:
 # We use json.load().
 
 with open('json_order.json', 'r') as file:
-    order = json.load(file, indent=4)
+    order = json.load(file,)
 print(order)
