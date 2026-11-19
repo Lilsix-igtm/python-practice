@@ -50,6 +50,7 @@ print(student1.course)
 
 #self.name = name means:
 #"Take the brand provided for that name parameter during registration and save it as an attribute called brand on this phone."
+#they are the attributes given to an object.
 
 #def __init__(self, name, age, course):
 #"When somebody creates a new phone object, collect its brand, model, price and colour."
@@ -69,3 +70,23 @@ phone2 = Phone('Samsung', 'S25 ultra', 8)
 
 phone1.introduction()
 phone2.introduction()
+
+#introduction() is a methos. it is used to give an object a specific action or function.
+
+class BankAccount:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.balance = balance
+
+
+    def show_balance(self, amount):
+        self.balance = self.balance + amount
+        print(self.balance)
+
+account = BankAccount('Mike', 10000)
+
+account.show_balance(2000)
+
+account.show_balance(3000)
+
+#in the above i created a class and added a methos that adds money to the balance attribute and prints out the balance.
